@@ -32,6 +32,6 @@
   "homepage": "https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test#readme",
   "description": "",
   "engines": {
-    "node": "14.x"
+    "node": "14.16.1"
   }
 }
