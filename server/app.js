@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const daoRouter = require("./routes/daos")
 const socialmediaRouter = require("./routes/socialmedia")
+const path = require("path")
 
 const cors = require("cors");
 
@@ -26,5 +27,13 @@ app.use("/", daoRouter);
 app.use("/socialmedia", socialmediaRouter);
 
 
+//serving static pages
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+});
+
 //listen at the port
-app.listen(3009);
+const PORT  = process.env.PORT || 3009
+app.listen(PORT);
