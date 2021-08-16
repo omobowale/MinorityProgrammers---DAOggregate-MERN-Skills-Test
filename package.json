@@ -1,18 +1,21 @@
 {
-  "name": "server",
+  "name": "map",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client-install": "npm install --prefix client",
-    "client": "npm start --prefix client",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "server": "nodemon app.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test/issues"
+  },
+  "homepage": "https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
@@ -20,18 +23,5 @@
     "express": "^4.17.1",
     "mongoose": "^5.13.7",
     "nodemon": "^2.0.12"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test.git"
-  },
-  "bugs": {
-    "url": "https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test/issues"
-  },
-  "homepage": "https://github.com/omobowale/MinorityProgrammers---DAOggregate-MERN-Skills-Test#readme",
-  "description": "",
-  "engines": {
-    "node": "14.16.1"
   }
 }
